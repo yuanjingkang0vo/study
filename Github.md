@@ -23,7 +23,7 @@
 * `git reset --hard HEAD^^`  回退到上两个版本。
 * `git reset --hard 版本号` 回退到键入版本号版本。
 
-`git relog`  查看更多的提交过版本号。
+`git reflog`  查看更多的提交过版本号。
 
 `git restore -- staged file`  同`git add file` 相反将file文件从仓库中移除。
 
