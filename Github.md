@@ -97,3 +97,41 @@ $ clip < ~/.ssh/id_rsa.pub
 ```
 
 至此设置成功。
+
+## 上传本地项目
+
+首先在本地创建一个本地目录。
+
+```shell
+$ mkdir study
+```
+
+将需要上传的文件复制到该目录下。
+
+创建github本地仓库。
+
+```shell
+$ git init
+```
+
+将上传的项目上传到远程库。
+
+```shell
+$ git add file
+$ git commit -m "first add"
+```
+
+在github上创建一个同名远程库，在这里不要选择创建README.md。
+
+创建完成github上的远程库之后，将本地库与远程库链接。
+
+```shell
+$ git remote add origin git@github.com:yuanjingkang0ov/study.git
+```
+
+将本地分支推送至远程库。
+
+```shell
+$ git push -u origin master
+```
+
